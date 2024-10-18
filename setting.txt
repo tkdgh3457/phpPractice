@@ -1,0 +1,17 @@
+common.php 에 작성된 부분으로인해
+member 테이블에서 키값을 찾아올수있음
+
+$config = array();
+$member = array();
+$board  = array();
+$group  = array();
+$g5     = array();
+$qaconfig = array();
+$g5_debug = array('php'=>array(),'sql'=>array());
+
+include_once(G5_LIB_PATH.'/hook.lib.php');    // hook 함수 파일
+include_once(G5_LIB_PATH.'/get_data.lib.php');    // 데이타 가져오는 함수 모음
+include_once(G5_LIB_PATH.'/cache.lib.php');     // cache 함수 및 object cache class 모음
+include_once(G5_LIB_PATH.'/uri.lib.php');    // URL 함수 파일
+
+$g5_object = new G5_object_cache();
