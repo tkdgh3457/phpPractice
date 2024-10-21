@@ -1,0 +1,15 @@
+24/10/21
+mysqli_query() 함수는
+
+mysqli_query($conn, $query);
+
+PHP에서 MySQL 데이터베이스에 쿼리를 실행하기 위해 사용
+이 함수는 데이터베이스 연결과 함께 SQL 쿼리를 전달하여, 데이터를 조회하거나 업데이트, 삭제, 삽입 등의 작업을 수행합니다.
+
+mysqli_connect() 함수로 생성된 연결
+$host = "localhost";
+$dbid = "ksblog";
+$dbpass = "gkdlxkq5420.";
+$dbname = "ksblog";
+$conn = mysqli_connect($host, $dbid, $dbpass, $dbname);
+mysqli_query($conn, "set names utf8");
