@@ -1,0 +1,10 @@
+21/10/21
+
+array_key_exists() 함수
+
+if (array_key_exists($mb_no, $member_adcnt1)) {
+    $adcnt = $member_adcnt1[$mb_no];
+}
+array_key_exists() 함수는 
+$mb_no라는 키가 특정 배열(예: $member_adcnt1)에 있는지 확인합니다. 
+있으면 그 값을 $adcnt에 저장합니다.
