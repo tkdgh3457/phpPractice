@@ -1,0 +1,36 @@
+24/10/25
+
+i++ : 값을 참조한 후에 증가
+++i : 값을 참조하기 전에 증가
+
+문자열의 값을 비교할 때는 반드시 equals를 사용
+String a = "hello";
+String b = "java";
+String c = "hello";
+System.out.println(a.equals(b)); // false 출력
+System.out.println(a.equals(c)); // true 
+ 
+contains:
+String a = "Hello Java";
+System.out.println(a.contains("Java"));  // true 출력
+
+
+replaceAll 메서드는 문자열에서 특정 문자열을 다른 문자열로 바꿀 때 사용한다. 
+다음 예에서는 Hello Java 문자열에서 Java를 World로 바꾸었다.
+
+String a = "Hello Java";
+System.out.println(a.replaceAll("Java", "World"));  // Hello World 출력
+
+
+문자열 포매팅
+String.format 메서드
+System.out.println(String.format("I eat %d apples.", 3));  // "I eat 3 apples." 출력
+숫자를 넣기 위해서는 %d를, 문자열을 넣으려면 %s를 써야 한다
+
+%s 포맷 코드인데, 이 코드는 어떤 형태의 값이든 변환해 넣을 수 있다.
+%s는 자동으로 전달되는 파라미터 값을 문자열로 바꾸어 사용하기 때문이다.
+ 
+다음처럼 값을 2개 이상 넣으려면 파라미터를 순서대로 전달하면 된다.
+int number = 10;
+String day = "three";
+System.out.println(String.format("I ate %d apples. so I was sick for %s days.", number, day));
